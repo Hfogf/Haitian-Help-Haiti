@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de paiement - Haitians Helping Haiti</title>
+    <meta name="description" content="Page de confirmation de paiement pour envoyer la preuve de votre don et nous aider à le traiter rapidement.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="logo.jpeg" alt="Haitians Helping Haiti" class="logo-image">
+                    <span class="logo-text">Haitians Helping Haiti</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section donation-section">
+        <div class="container">
+            <div id="paymentSuccess" class="payment-success" style="display: none;">
+                <div class="success-icon">✅</div>
+                <h2>Paiement Réussi !</h2>
+                <p>Votre don a été traité avec succès via Stripe. Merci pour votre générosité !</p>
+                <p>Pour finaliser, envoyez votre preuve de paiement ci-dessous afin que nous puissions confirmer et attribuer votre don.</p>
+            </div>
+
+            <div class="section-header">
+                <div class="section-badge section-badge-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#ED2939" stroke="#ED2939" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span>Confirmation de paiement</span>
+                </div>
+                <h2 class="section-title gradient-text">Envoyez votre preuve</h2>
+                <p class="section-subtitle">Complétez le formulaire ci-dessous pour confirmer votre don et permettre un traitement rapide.</p>
+            </div>
+
+            <div class="donation-grid">
+                <div class="donation-form">
+                    <form id="confirmationForm" action="/confirm" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="vous@exemple.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="text" id="phone" name="phone" placeholder="+509 3812 3456" />
+                        </div>
+                        <div class="form-group">
+                            <label for="currency">Devise</label>
+                            <select id="currency" name="currency">
+                                <option value="HTG">HTG</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Montant</label>
+                            <input type="number" id="amount" name="amount" min="1" required placeholder="500" />
+                        </div>
+                        <div class="form-group">
+                            <label for="method">Méthode</label>
+                            <select id="method" name="method" required>
+                                <option value="moncash">MonCash</option>
+                                <option value="natcash">NatCash</option>
+                                <option value="bank">Banque</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="proof">Preuve de paiement</label>
+                            <input type="file" id="proof" name="proof" accept="image/*,application/pdf" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Options: envoyer la référence, le motif, ou votre message"></textarea>
+                        </div>
+                        <div id="formStatus" class="form-status"></div>
+                        <button type="submit" class="btn btn-primary">Envoyer la preuve</button>
+                    </form>
+                </div>
+
+                <div class="donation-info">
+                    <div class="impact-box">
+                        <h3>Pourquoi confirmer ?</h3>
+                        <ul class="guide-steps">
+                            <li>1. Nous recevons votre virement.</li>
+                            <li>2. Nous validons la preuve.</li>
+                            <li>3. Nous attribuons votre don à un programme.</li>
+                            <li>4. Nous vous envoyons un accusé de réception.</li>
+                        </ul>
+                    </div>
+
+                    <div class="why-box">
+                        <h3>Contact rapide</h3>
+                        <p class="footer-desc">Envoyez votre preuve par email ou WhatsApp si nécessaire :</p>
+                        <ul class="footer-contact">
+                            <li><strong>Email :</strong> info@hhhaiti.org</li>
+                            <li><strong>WhatsApp :</strong> +509 3812 3456</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haitians Helping Haiti. Tous droits réservés 🇭🇹</p>
+                <p><a href="index.html">← Retour à la page d'accueil</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="confirmation.js"></script>
+</body>
+</html>

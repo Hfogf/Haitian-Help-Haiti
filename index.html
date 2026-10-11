@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitians Helping Haiti - Association Caritative</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Haitians Helping Haiti - association caritative par les Haïtiens, pour les Haïtiens.">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+   
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="logo.jpeg" alt="Haitians Helping Haiti" class="logo-image">
+                    <div>
+                        <span class="logo-text">Haitians Helping Haiti</span>
+                        <span class="logo-subtitle">Par les Haïtiens, pour les Haïtiens 🇭🇹</span>
+                    </div>
+                </a>
+
+                <div class="nav-links desktop-nav">
+                    <a href="#about">À Propos</a>
+                    <a href="#mission">Mission</a>
+                    <a href="#actions">Actions</a>
+                    <a href="#video">Témoignages</a>
+                    <a href="confirmation.html">Confirmation</a>
+                    <a href="#don" class="btn-donate">Faire un Don</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#about">À Propos</a>
+                <a href="#mission">Mission</a>
+                <a href="#actions">Actions</a>
+                <a href="#video">Témoignages</a>
+                <a href="confirmation.html">Confirmation</a>
+                <a href="#don" class="btn-donate-mobile">Faire un Don</a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-tag">Association caritative haïtienne</span>
+            <h1 class="hero-title">Ansanm , n ap bati yon avni pi bon</h1>
+            <p class="hero-subtitle">Vin jwenn nou nan misyon solidarite ak antrèd pou sila yo ki gen pi plis bezwen.</p>
+            <div class="hero-buttons">
+                <a href="#don" class="btn btn-primary">
+                    <span>Fè yon don kounye a</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                <a href="#actions" class="btn btn-secondary">Dekouvri aksyon nou yo</a>
+            </div>
+            <div class="hero-quick">
+                <p>100% transparans • Pwogram mobil • Sipò dirèk pou fanmi an</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <div class="badge-dot"></div>
+                    <span>À Propos de Nous</span>
+                </div>
+                <h2 class="section-title gradient-text">Haitians Helping Haiti</h2>
+                <p class="section-subtitle">Une organisation par les Haïtiens, pour les Haïtiens, créant un impact durable à travers l'aide d'urgence, l'éducation et les opportunités économiques.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800" alt="Action communautaire">
+                        <div class="about-image-overlay">
+                            <div class="about-image-badge">
+                                <p class="badge-title">Fondée en 2018</p>
+                                <p class="badge-desc">Plus de 6 ans d'impact continu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-images-grid">
+                        <div class="about-image-small">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400" alt="Action 2">
+                        </div>
+                        <div class="about-image-small">
+                            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400" alt="Action 3">
+                        </div>
+                        <div class="about-image-small">
+                            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400" alt="Action 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Depuis notre création en <strong class="text-blue">2018</strong>, nous avons aidé plus de <strong class="text-red">15,000 familles</strong> à travers nos programmes d'aide alimentaire, d'éducation et de logement d'urgence.</p>
+                        <p>Notre approche unique place les Haïtiens au cœur de chaque décision. Nous croyons que le changement véritable vient de l'intérieur, avec des programmes conçus par ceux qui comprennent vraiment les besoins de leur communauté.</p>
+                    </div>
+
+                    <div class="value-cards">
+                        <div class="value-card">
+                            <div class="value-icon value-icon-red">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2v20M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h3>Impact Mesurable</h3>
+                                <p>Chaque action est suivie et évaluée pour garantir un impact réel</p>
+                            </div>
+                            <div class="value-check">✓</div>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="value-icon value-icon-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h3>Authenticité</h3>
+                                <p>Fondée et dirigée par des Haïtiens qui comprennent les besoins</p>
+                            </div>
+                            <div class="value-check">✓</div>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="value-icon value-icon-purple">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="value-content">
+                                <h3>Communauté</h3>
+                                <p>Une approche collaborative qui unit les forces locales</p>
+                            </div>
+                            <div class="value-check">✓</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programs-stats">
+                <div class="program-card">
+                    <div class="program-icon program-icon-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12h18M12 3v18"></path>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="program-value">200K+</div>
+                    <div class="program-label">Aide Alimentaire</div>
+                    <div class="program-desc">repas distribués</div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon program-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="program-value">3,500</div>
+                    <div class="program-label">Éducation</div>
+                    <div class="program-desc">enfants scolarisés</div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon program-icon-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="program-value">500</div>
+                    <div class="program-label">Logement</div>
+                    <div class="program-desc">familles relogées</div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <div class="cta-content">
+                    <svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <h3 class="cta-title">Rejoignez Notre Mission</h3>
+                    <p class="cta-text">Ensemble, nous pouvons créer un avenir meilleur pour Haïti. Chaque contribution compte.</p>
+                    <a href="#don" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <span>Faire un Don Maintenant</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mission" class="section mission-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge section-badge-blue">
+                    <div class="badge-dot"></div>
+                    <span>Notre Mission</span>
+                </div>
+                <h2 class="section-title gradient-text">Ce Qui Nous Anime</h2>
+                <p class="section-subtitle">Trois valeurs au cœur de notre engagement pour Haïti</p>
+            </div>
+
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-glow mission-glow-blue"></div>
+                    <div class="mission-icon mission-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mission-title">Solidarité</h3>
+                    <p class="mission-desc">Force du collectif et de l'entraide pour faire la différence.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-glow mission-glow-red"></div>
+                    <div class="mission-icon mission-icon-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mission-title">Communauté</h3>
+                    <p class="mission-desc">Bénévoles et donateurs engagés partageant nos valeurs.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="mission-glow mission-glow-blue"></div>
+                    <div class="mission-icon mission-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mission-title">Impact Global</h3>
+                    <p class="mission-desc">D'Haïti à la diaspora avec des projets concrets.</p>
+                </div>
+            </div>
+
+            <div class="video-cta">
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-primary btn-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <span>Voir Toutes Nos Vidéos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="actions" class="section actions-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge section-badge-red">
+                    <div class="badge-dot"></div>
+                    <span>Nos Actions</span>
+                </div>
+                <h2 class="section-title gradient-text">Sur le Terrain</h2>
+                <p class="section-subtitle">Des projets concrets qui transforment des vies chaque jour</p>
+            </div>
+
+            <div class="actions-grid">
+                <div class="action-card">
+                    <div class="action-image">
+                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600" alt="Aide d'urgence">
+                        <div class="action-overlay"></div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-header">
+                            <div class="action-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"></path>
+                                    <path d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"></path>
+                                    <path d="m2 13 6 6"></path>
+                                </svg>
+                            </div>
+                            <h3>Aide d'urgence</h3>
+                        </div>
+                        <p class="action-desc">Kits de première nécessité pour familles en précarité.</p>
+                        <div class="action-stats">
+                            <div class="stats-dot"></div>
+                            <span>15K familles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600" alt="Aide alimentaire">
+                        <div class="action-overlay"></div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-header">
+                            <div class="action-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                    <path d="M7 2v20"></path>
+                                    <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                                </svg>
+                            </div>
+                            <h3>Aide alimentaire</h3>
+                        </div>
+                        <p class="action-desc">Banques alimentaires et repas chauds.</p>
+                        <div class="action-stats">
+                            <div class="stats-dot"></div>
+                            <span>200K repas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-image">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600" alt="Éducation">
+                        <div class="action-overlay"></div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-header">
+                            <div class="action-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <h3>Éducation</h3>
+                        </div>
+                        <p class="action-desc">Soutien scolaire et insertion professionnelle.</p>
+                        <div class="action-stats">
+                            <div class="stats-dot"></div>
+                            <span>3.5K jeunes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-card">
+                    <div class="action-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600" alt="Hébergement">
+                        <div class="action-overlay"></div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-header">
+                            <div class="action-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Hébergement</h3>
+                        </div>
+                        <p class="action-desc">Centres d'accueil et réinsertion.</p>
+                        <div class="action-stats">
+                            <div class="stats-dot"></div>
+                            <span>800 personnes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="video" class="section video-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge section-badge-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#ED2939" stroke="#ED2939" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <span>Témoignages</span>
+                </div>
+                <h2 class="section-title section-title-white">Histoires de <span class="gradient-text-red">Transformation</span></h2>
+                <p class="section-subtitle section-subtitle-white">Découvrez comment ensemble, nous changeons des vies</p>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-iframe">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="L'histoire de Marie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>L'histoire de Marie</h3>
+                        <p>Comment nous avons aidé Marie.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-iframe">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Bénévoles en action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Bénévoles en action</h3>
+                        <p>Distribution alimentaire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="don" class="section donation-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge section-badge-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#ED2939" stroke="#ED2939" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span>Faites la Différence</span>
+                </div>
+                <h2 class="section-title gradient-text">Soutenez Notre Cause</h2>
+                <p class="section-subtitle">Chaque contribution compte et transforme directement la vie des familles haïtiennes.</p>
+            </div>
+
+            <div class="donation-grid">
+                <div class="donation-card">
+                    <div class="donation-card-top">
+                        <span class="donation-card-tag">Campagne de Solidarité</span>
+                        <h3>Votre don aide directement des familles haïtiennes</h3>
+                        <p>Choisissez un montant, la méthode de paiement et confirmez ensuite votre don sur la page de validation.</p>
+                    </div>
+
+                    <div class="donation-status">
+                        <div class="status-row">
+                            <div class="status-value">75</div>
+                            <span class="status-currency">HTG</span>
+                        </div>
+                        <p class="status-label">collectés sur 500 000 HTG</p>
+                        <div class="progress-bar">
+                            <span style="width: 15%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="donation-card-actions">
+                        <button type="button" class="btn btn-outline">Partager</button>
+                        <a href="confirmation.html" class="btn btn-primary">Confirmer le don</a>
+                    </div>
+
+                    <div class="donation-recent">
+                        <div class="donation-item">
+                            <div>
+                                <p>Anonymous</p>
+                                <small>1 hr</small>
+                            </div>
+                            <strong>25 HTG</strong>
+                        </div>
+                        <div class="donation-item">
+                            <div>
+                                <p>Anonymous</p>
+                                <small>8 hrs</small>
+                            </div>
+                            <strong>50 HTG</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donation-form-card">
+                    <div class="donation-form">
+                        <div class="form-group">
+                            <label>Devise</label>
+                            <div class="currency-buttons">
+                                <button class="currency-btn active" data-currency="HTG">🇭🇹 HTG</button>
+                                <button class="currency-btn" data-currency="USD"> USD</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customAmount">Montant personnalisé</label>
+                            <input type="number" id="customAmount" class="custom-amount" placeholder="Autre montant" value="500" aria-describedby="amount-help">
+                            <small id="amount-help" class="sr-only">Entrez un montant personnalisé en HTG ou USD.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Méthode</label>
+                            <div class="payment-methods">
+                                <button class="payment-btn active" data-method="moncash">
+                                    <div class="payment-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                        </svg>
+                                    </div>
+                                    <span>MonCash</span>
+                                </button>
+                                <button class="payment-btn" data-method="natcash">
+                                    <div class="payment-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                        </svg>
+                                    </div>
+                                    <span>NatCash</span>
+                                </button>
+                                <button class="payment-btn" data-method="bank">
+                                    <div class="payment-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Banque</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="payment-info" id="paymentInfo">
+                            <p class="info-title">MonCash</p>
+                            <p class="info-detail">+509 3812 3456</p>
+                        </div>
+                        <div class="payment-info" id="paymentInfo">
+                            <p class="info-title">NatCash</p>
+                            <p class="info-detail">+509 3322 3455</p>
+                        </div>
+
+                        <div class="payment-guide" id="paymentGuide">
+                            <p class="guide-simple">Utilisez l’application choisie et envoyez la preuve sur la page de confirmation.</p>
+                        </div>
+
+                        <button class="btn btn-primary btn-donate-submit" id="donateBtn" type="button">
+                             Donner <span id="donateAmount">500</span> <span id="donateCurrency">HTG</span>
+                        </button>
+
+                        <p class="donation-hint">Après le paiement, confirmez votre don :</p>
+                        <a href="confirmation.html" class="btn btn-secondary">Envoyer preuve de paiement</a>
+                    </div>
+
+                    <div class="donation-info">
+                        <div class="why-box">
+                            <h3>Pourquoi Nous?</h3>
+                            <ul class="why-list">
+                                <li>✓ 100% des dons aux programmes</li>
+                                <li>✓ Transparence totale</li>
+                                <li>✓ Rapports trimestriels</li>
+                                <li>✓ Équipe dédiée</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section impact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge section-badge-blue">
+                    <span>Impact</span>
+                </div>
+                <h2 class="section-title gradient-text">Ce que votre don transforme</h2>
+                <p class="section-subtitle">Des actions simples, des résultats forts et immédiats pour Haïti.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <strong>650 HTG / 5 USD</strong>
+                    <p>40 repas chauds distribués aux familles en urgence.</p>
+                </div>
+                <div class="impact-card">
+                    <strong>1300 HTG / 10 USD</strong>
+                    <p>Un kit d’urgence pour une famille touchée par une catastrophe.</p>
+                </div>
+                <div class="impact-card">
+                    <strong>3250 HTG / 25 USD</strong>
+                    <p>Un mois de scolarité pour un enfant haïtien.</p>
+                </div>
+                <div class="impact-card">
+                    <strong>6500 HTG / 50 USD</strong>
+                    <p>Un hébergement solide pour une semaine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo.jpeg" alt="Haitians Helping Haiti" class="footer-logo-img">
+                        <span>Haitians Helping Haiti</span>
+                    </div>
+                    <p class="footer-desc">Association caritative dédiée à l'aide aux familles haïtiennes.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#mission">Notre Mission</a></li>
+                        <li><a href="#actions">Nos Actions</a></li>
+                        <li><a href="#video">Témoignages</a></li>
+                        <li><a href="confirmation.html">Confirmation</a></li>
+                        <li><a href="#don">Faire un Don</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Rapports Annuels</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Port-au-Prince, Haïti</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+509 3812 3456</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>info@hhhaiti.org</span>
+                        </li>
+                    </ul>
+                    <div class="payment-box">
+                        <p class="payment-title">Paiements</p>
+                        <p class="payment-detail">MonCash: +509 3812 3456</p>
+                        <p class="payment-detail">NatCash: +509 4567 8900</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newsletter-section">
+                <h4>Restez Informé</h4>
+                <p>Abonnez-vous à notre newsletter pour recevoir des mises à jour sur nos actions.</p>
+                <form class="newsletter-form" action="/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haitians Helping Haiti. Tous droits réservés 🇭🇹</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
